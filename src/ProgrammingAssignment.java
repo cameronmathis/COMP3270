@@ -1084,8 +1084,8 @@ public class ProgrammingAssignment {
     private static int Algorithm_4(int[] X) {
         int maxSoFar = 0;
         int maxEndingHere = 0;
-        for (int x : X) {
-            maxEndingHere = Math.max(0, maxEndingHere + x);
+        for (int I = 0; I < X.length; I++) {
+            maxEndingHere = Math.max(0, maxEndingHere + X[I]);
             maxSoFar = Math.max(maxSoFar, maxEndingHere);
         }
         return maxSoFar;
