@@ -58,7 +58,7 @@ public class ProgrammingAssignment {
     //Make sure 10 integers were found.
     if (count != 10) {
         System.out.print("The file did not meet the 10 integer criteria. "
-                + "Please check the file to make sure the file holds 10 integers or if the file contains non integer values.");
+                + "Please check the file to make sure the file holds 10 integers and does not contain non-integer values.");
         return;
     }
 
@@ -930,7 +930,6 @@ public class ProgrammingAssignment {
      *@param X The array the algorithm will find the biggest subset of.
      *@return maxSoFar Returns the biggest subset found.
      */
-
     private static int Algorithm_1(int[] X) {
         int maxSoFar = 0;
         for(int L = 0; L < X.length; L++){
@@ -950,7 +949,6 @@ public class ProgrammingAssignment {
      *@param X The array the algorithm will find the biggest subset of.
      *@return maxSoFar Returns the biggest subset found.
      */
-
     private static int Algorithm_2(int[] X) {
         int maxSoFar = 0;
         for (int L = 0; L < X.length; L++){
@@ -970,7 +968,6 @@ public class ProgrammingAssignment {
      *@param U the last index of the array
      *@return Returns the biggest subset found.
      */
-
     private static int Algorithm_3(int[] X, int L, int U) {
         if (L > U){
             return 0; /* zero-element vector */
@@ -1008,7 +1005,6 @@ public class ProgrammingAssignment {
      *@return maxSoFar Returns the biggest subset found.
      *
      */
-
     private static int Algorithm_4(int[] X) {
         int maxSoFar = 0;
         int maxEndingHere = 0;
