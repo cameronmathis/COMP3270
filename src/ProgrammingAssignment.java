@@ -896,7 +896,7 @@ public class ProgrammingAssignment {
     for(int i = 0; i < 19; i++) {
         //Algorithm 1
         matrix[i][4] = Math.ceil(((11/6)*(Math.pow(n,3)))
-                + ((42/6)*(Math.pow(n,2))) + ((23/6)*n) + (44/6));
+                + ((14)*(Math.pow(n,2))) + ((23/6)*n) + (44/6));
         //Algorithm 2
         matrix[i][5] = Math.ceil(((11/2)*(Math.pow(n,2))) + ((17/2)*n) + 4);
         //Algorithm 3
