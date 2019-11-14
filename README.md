@@ -1,7 +1,7 @@
 # COMP3270
 Programming Assignment
 ## Students
-Cameron Mathis
+Cameron Mathis  
 Spencer Downey
 ## Files
 phw_input.txt - used to test program  
