@@ -4,10 +4,10 @@ Programming Assignment
 Cameron Mathis
 Spencer Downey
 ## Files
-phw_input.txt - used to test program
-cameronmathis_phw_output.txt - program output
-ProgrammingAssignment.java - code used to generate output and test algorithms
-COMP 3270 Programming Problem.pdf - the document used to calculate the time complexity and display graphs of each algorithm
+phw_input.txt - used to test program  
+cameronmathis_phw_output.txt - program output  
+ProgrammingAssignment.java - code used to generate output and test algorithms  
+COMP 3270 Programming Problem.pdf - the document used to calculate the time complexity and display graphs of each algorithm  
 ## IDE
 Code was written in and compiled using IntelliJ
 ## Certification Statement
