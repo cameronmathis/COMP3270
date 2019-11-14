@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.File;
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 import java.io.PrintWriter;
@@ -410,7 +409,7 @@ public class ProgrammingAssignment {
     matrix[5][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Fourty-----------------------------------------*/
+    /*--------------------------------------Forty-----------------------------------------*/
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
         elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
@@ -448,7 +447,7 @@ public class ProgrammingAssignment {
     timeAverage = 0;
 
 
-    /*--------------------------------------FourtyFive-----------------------------------------*/
+    /*--------------------------------------FortyFive-----------------------------------------*/
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
         elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
@@ -1014,8 +1013,8 @@ public class ProgrammingAssignment {
     public static int Algorithm_4(int[] X) {
         int maxSoFar = 0;
         int maxEndingHere = 0;
-        for (int I = 0; I < X.length; I++) {
-            maxEndingHere = Math.max(0, maxEndingHere + X[I]);
+        for (int x : X) {
+            maxEndingHere = Math.max(0, maxEndingHere + x);
             maxSoFar = Math.max(maxSoFar, maxEndingHere);
         }
         return maxSoFar;
