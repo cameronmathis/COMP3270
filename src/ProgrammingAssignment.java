@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 
 /**
  * @author Cameron Mathis
- * @version 10/30/19
+ * @version 11/13/19
  * COMP 3270 Programming Assignment
  * Multiple algorithms used on an
  * array to determine each algorithm's
