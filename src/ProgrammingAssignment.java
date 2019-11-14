@@ -24,8 +24,7 @@ public class ProgrammingAssignment {
 
     int count = 0; //Used to make sure 10 integers were read in
 
-    /**************************Read in values from file "phw_input.txt"*****************************/
-
+    //Read in values from file "phw_input.txt"
     try {
         Scanner scan = new Scanner(file);
         scan.useDelimiter(",");
@@ -78,7 +77,7 @@ public class ProgrammingAssignment {
 
     Random rand = new Random();
 
-    /*******************************Create different size arrays*****************************/
+    //Create arrays of size 10 to 100
     int[] ten = new int[10];
     int[] fifteen = new int[15];
     int[] twenty = new int[20];
@@ -99,7 +98,7 @@ public class ProgrammingAssignment {
     int[] ninetyfive = new int[95];
     int[] hundred = new int[100];
 
-    /************************Generate random numbers from -25 to 50*************************/
+    //Generate random numbers from -25 to 50
     for (int i = 0; i < 10; i++) {
         ten[i] = rand.nextInt(76) - 25;
     }
@@ -180,16 +179,16 @@ public class ProgrammingAssignment {
 
     double timeAverage = 0;
 
-    /**
-     * Runs arrays from size 10 to 100 through all four algorithms
-     * and place clock times in their appropriate matrix cell.
-     * All algorithms were ran 1000 times.
+    /*
+      Runs arrays from size 10 to 100 through all four algorithms
+      and place clock times in their appropriate matrix cell.
+      All algorithms were ran 1000 times.
      */
 
-    /*--------------------------------------Ten-----------------------------------------*/
+    //Ten
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -198,7 +197,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -207,7 +206,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -216,7 +215,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
 
@@ -224,10 +223,10 @@ public class ProgrammingAssignment {
     matrix[0][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Fifteen-----------------------------------------*/
+    //Fifteen
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -236,7 +235,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -245,7 +244,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -254,17 +253,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[1][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Twenty-----------------------------------------*/
+    //Twenty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -273,7 +272,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -282,7 +281,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -291,17 +290,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[2][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------TwentyFive-----------------------------------------*/
+    //TwentyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -310,7 +309,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -319,7 +318,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -328,17 +327,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[3][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Thirty-----------------------------------------*/
+    //Thirty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -347,7 +346,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -356,7 +355,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -365,17 +364,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[4][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------ThirtyFive-----------------------------------------*/
+    //ThirtyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -384,7 +383,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -393,7 +392,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -402,17 +401,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[5][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Forty-----------------------------------------*/
+    //Forty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -421,7 +420,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -430,7 +429,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -439,7 +438,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -447,10 +446,10 @@ public class ProgrammingAssignment {
     timeAverage = 0;
 
 
-    /*--------------------------------------FortyFive-----------------------------------------*/
+    //FortyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -459,7 +458,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -468,7 +467,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -477,17 +476,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[7][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Fifty-----------------------------------------*/
+    //Fifty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -496,7 +495,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -505,7 +504,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -514,17 +513,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[8][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------FiftyFive-----------------------------------------*/
+    //FiftyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -533,7 +532,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -542,7 +541,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -551,17 +550,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[9][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Sixty-----------------------------------------*/
+    //Sixty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -570,7 +569,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -579,7 +578,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -588,17 +587,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[10][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------SixtyFive-----------------------------------------*/
+    //SixtyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -607,7 +606,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -616,7 +615,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -625,17 +624,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[11][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Seventy-----------------------------------------*/
+    //Seventy
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -644,7 +643,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -653,7 +652,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -662,17 +661,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[12][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------SeventyFive-----------------------------------------*/
+    //SeventyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -681,7 +680,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -690,7 +689,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -699,17 +698,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[13][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Eighty-----------------------------------------*/
+    //Eighty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -718,7 +717,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -727,7 +726,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -736,17 +735,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[14][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------EightyFive-----------------------------------------*/
+    //EightyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -755,7 +754,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -764,7 +763,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -773,17 +772,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[15][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Ninety-----------------------------------------*/
+    //Ninety
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -792,7 +791,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -801,7 +800,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -810,17 +809,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[16][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------NinetyFive-----------------------------------------*/
+    //NinetyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -829,7 +828,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -838,7 +837,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -847,17 +846,17 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[17][3] = timeAverage;
     timeAverage = 0;
 
-    /*--------------------------------------Hundred-----------------------------------------*/
+    //One Hundred
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -866,7 +865,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -875,7 +874,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
@@ -884,13 +883,13 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        elapsedTime = (System.nanoTime() - start) / 1000000000d; //'d' to specify double
+        elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
     timeAverage = timeAverage/1000;
     matrix[18][3] = timeAverage;
 
-    /*---------------------------Inserting calculated complexities-----------------------------------*/
+    //Inserting calculated complexities
     int n = 10;
     for(int i = 0; i < 19; i++) {
         //Algorithm 1
@@ -932,7 +931,7 @@ public class ProgrammingAssignment {
      *@return maxSoFar Returns the biggest subset found.
      */
 
-    public static int Algorithm_1(int[] X) {
+    private static int Algorithm_1(int[] X) {
         int maxSoFar = 0;
         for(int L = 0; L < X.length; L++){
             for(int U = L; U < X.length; U++) {
@@ -952,7 +951,7 @@ public class ProgrammingAssignment {
      *@return maxSoFar Returns the biggest subset found.
      */
 
-    public static int Algorithm_2(int[] X) {
+    private static int Algorithm_2(int[] X) {
         int maxSoFar = 0;
         for (int L = 0; L < X.length; L++){
             int sum = 0;
@@ -972,7 +971,7 @@ public class ProgrammingAssignment {
      *@return Returns the biggest subset found.
      */
 
-    public static int Algorithm_3(int[] X, int L, int U) {
+    private static int Algorithm_3(int[] X, int L, int U) {
         if (L > U){
             return 0; /* zero-element vector */
         }
@@ -1010,7 +1009,7 @@ public class ProgrammingAssignment {
      *
      */
 
-    public static int Algorithm_4(int[] X) {
+    private static int Algorithm_4(int[] X) {
         int maxSoFar = 0;
         int maxEndingHere = 0;
         for (int x : X) {
