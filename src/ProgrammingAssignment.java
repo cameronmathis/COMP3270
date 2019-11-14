@@ -178,6 +178,7 @@ public class ProgrammingAssignment {
     double[][] matrix = new double[19][8];
 
     double timeAverage = 0;
+    int sum; // never actually used
 
     /*
       Runs arrays from size 10 to 100 through all four algorithms
@@ -188,7 +189,7 @@ public class ProgrammingAssignment {
     //Ten
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(ten);
+        sum = Algorithm_1(ten);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -198,7 +199,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(ten);
+        sum = Algorithm_2(ten);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -208,7 +209,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(ten, 0, ten.length - 1);
+        sum = Algorithm_3(ten, 0, ten.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -218,7 +219,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(ten);
+        sum = Algorithm_4(ten);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -230,7 +231,7 @@ public class ProgrammingAssignment {
     //Fifteen
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(fifteen);
+        sum = Algorithm_1(fifteen);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -240,7 +241,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(fifteen);
+        sum = Algorithm_2(fifteen);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -250,7 +251,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(fifteen, 0, fifteen.length - 1);
+        sum = Algorithm_3(fifteen, 0, fifteen.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -260,7 +261,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(fifteen);
+        sum = Algorithm_4(fifteen);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -271,7 +272,7 @@ public class ProgrammingAssignment {
     //Twenty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(twenty);
+        sum = Algorithm_1(twenty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -281,7 +282,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(twenty);
+        sum = Algorithm_2(twenty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -291,7 +292,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(twenty, 0, twenty.length - 1);
+        sum = Algorithm_3(twenty, 0, twenty.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -301,7 +302,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(twenty);
+        sum = Algorithm_4(twenty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -312,7 +313,7 @@ public class ProgrammingAssignment {
     //TwentyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(twentyfive);
+        sum = Algorithm_1(twentyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -322,7 +323,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(twentyfive);
+        sum = Algorithm_2(twentyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -332,7 +333,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(twentyfive, 0, twentyfive.length - 1);
+        sum = Algorithm_3(twentyfive, 0, twentyfive.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -342,7 +343,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(twentyfive);
+        sum = Algorithm_4(twentyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -353,7 +354,7 @@ public class ProgrammingAssignment {
     //Thirty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(thirty);
+        sum = Algorithm_1(thirty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -363,7 +364,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(thirty);
+        sum = Algorithm_2(thirty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -373,7 +374,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(thirty, 0, thirty.length - 1);
+        sum = Algorithm_3(thirty, 0, thirty.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -383,7 +384,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(thirty);
+        sum = Algorithm_4(thirty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -394,7 +395,7 @@ public class ProgrammingAssignment {
     //ThirtyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(thirtyfive);
+        sum = Algorithm_1(thirtyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -404,7 +405,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(thirtyfive);
+        sum = Algorithm_2(thirtyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -414,7 +415,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(thirtyfive, 0, thirtyfive.length - 1);
+        sum = Algorithm_3(thirtyfive, 0, thirtyfive.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -424,7 +425,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(thirtyfive);
+        sum = Algorithm_4(thirtyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -435,7 +436,7 @@ public class ProgrammingAssignment {
     //Forty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(forty);
+        sum = Algorithm_1(forty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -445,7 +446,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(forty);
+        sum = Algorithm_2(forty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -455,7 +456,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(forty, 0, forty.length - 1);
+        sum = Algorithm_3(forty, 0, forty.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -465,7 +466,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(forty);
+        sum = Algorithm_4(forty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -477,7 +478,7 @@ public class ProgrammingAssignment {
     //FortyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(fortyfive);
+        sum = Algorithm_1(fortyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -487,7 +488,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(fortyfive);
+        sum = Algorithm_2(fortyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -497,7 +498,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(fortyfive, 0, fortyfive.length - 1);
+        sum = Algorithm_3(fortyfive, 0, fortyfive.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -507,7 +508,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(fortyfive);
+        sum = Algorithm_4(fortyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -518,7 +519,7 @@ public class ProgrammingAssignment {
     //Fifty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(fifty);
+        sum = Algorithm_1(fifty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -528,7 +529,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(fifty);
+        sum = Algorithm_2(fifty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -538,7 +539,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(fifty, 0, fifty.length - 1);
+        sum = Algorithm_3(fifty, 0, fifty.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -548,7 +549,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(fifty);
+        sum = Algorithm_4(fifty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -559,7 +560,7 @@ public class ProgrammingAssignment {
     //FiftyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(fiftyfive);
+        sum = Algorithm_1(fiftyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -569,7 +570,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(fiftyfive);
+        sum = Algorithm_2(fiftyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -579,7 +580,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(fiftyfive, 0, fiftyfive.length - 1);
+        sum = Algorithm_3(fiftyfive, 0, fiftyfive.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -589,7 +590,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(fiftyfive);
+        sum = Algorithm_4(fiftyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -600,7 +601,7 @@ public class ProgrammingAssignment {
     //Sixty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(sixty);
+        sum = Algorithm_1(sixty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -610,7 +611,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(sixty);
+        sum = Algorithm_2(sixty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -620,7 +621,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(sixty, 0, sixty.length - 1);
+        sum = Algorithm_3(sixty, 0, sixty.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -630,7 +631,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(sixty);
+        sum = Algorithm_4(sixty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -641,7 +642,7 @@ public class ProgrammingAssignment {
     //SixtyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(sixtyfive);
+        sum = Algorithm_1(sixtyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -651,7 +652,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(sixtyfive);
+        sum = Algorithm_2(sixtyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -661,7 +662,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(sixtyfive, 0, sixtyfive.length - 1);
+        sum = Algorithm_3(sixtyfive, 0, sixtyfive.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -671,7 +672,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(sixtyfive);
+        sum = Algorithm_4(sixtyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -682,7 +683,7 @@ public class ProgrammingAssignment {
     //Seventy
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(seventy);
+        sum = Algorithm_1(seventy);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -692,7 +693,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(seventy);
+        sum = Algorithm_2(seventy);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -702,7 +703,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(seventy, 0, seventy.length - 1);
+        sum = Algorithm_3(seventy, 0, seventy.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -712,7 +713,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(seventy);
+        sum = Algorithm_4(seventy);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -723,7 +724,7 @@ public class ProgrammingAssignment {
     //SeventyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(seventyfive);
+        sum = Algorithm_1(seventyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -733,7 +734,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(seventyfive);
+        sum = Algorithm_2(seventyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -743,7 +744,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(seventyfive, 0, seventy.length - 1);
+        sum = Algorithm_3(seventyfive, 0, seventyfive.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -753,7 +754,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(seventyfive);
+        sum = Algorithm_4(seventyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -764,7 +765,7 @@ public class ProgrammingAssignment {
     //Eighty
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(eighty);
+        sum = Algorithm_1(eighty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -774,7 +775,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(eighty);
+        sum = Algorithm_2(eighty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -784,7 +785,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(eighty, 0, eighty.length - 1);
+        sum = Algorithm_3(eighty, 0, eighty.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -794,7 +795,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(eighty);
+        sum = Algorithm_4(eighty);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -805,7 +806,7 @@ public class ProgrammingAssignment {
     //EightyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(eightyfive);
+        sum = Algorithm_1(eightyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -815,7 +816,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(eightyfive);
+        sum = Algorithm_2(eightyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -825,7 +826,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(eightyfive, 0, eightyfive.length - 1);
+        sum = Algorithm_3(eightyfive, 0, eightyfive.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -835,7 +836,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(eightyfive);
+        sum = Algorithm_4(eightyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -846,7 +847,7 @@ public class ProgrammingAssignment {
     //Ninety
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(ninety);
+        sum = Algorithm_1(ninety);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -856,7 +857,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(ninety);
+        sum = Algorithm_2(ninety);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -866,7 +867,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(ninety, 0, ninety.length - 1);
+        sum = Algorithm_3(ninety, 0, ninety.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -876,7 +877,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(ninety);
+        sum = Algorithm_4(ninety);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -887,7 +888,7 @@ public class ProgrammingAssignment {
     //NinetyFive
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(ninetyfive);
+        sum = Algorithm_1(ninetyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -897,7 +898,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(ninetyfive);
+        sum = Algorithm_2(ninetyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -907,7 +908,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(ninetyfive, 0, ninetyfive.length - 1);
+        sum = Algorithm_3(ninetyfive, 0, ninetyfive.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -917,7 +918,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(ninetyfive);
+        sum = Algorithm_4(ninetyfive);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -928,7 +929,7 @@ public class ProgrammingAssignment {
     //One Hundred
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_1(hundred);
+        sum = Algorithm_1(hundred);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -938,7 +939,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_2(hundred);
+        sum = Algorithm_2(hundred);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -948,7 +949,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_3(hundred, 0, hundred.length - 1);
+        sum = Algorithm_3(hundred, 0, hundred.length - 1);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
@@ -958,7 +959,7 @@ public class ProgrammingAssignment {
 
     for (int i = 0; i < 1000; i++) {
         start = System.nanoTime();
-        Algorithm_4(hundred);
+        sum = Algorithm_4(hundred);
         elapsedTime = (System.nanoTime() - start) / 1000000000d;
         timeAverage += elapsedTime;
     }
