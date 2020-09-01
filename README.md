@@ -1,5 +1,5 @@
 # COMP3270
-Programming Assignment
+Introduction to Algorithms
 ## Students
 Cameron Mathis  
 Spencer Downey
